@@ -212,10 +212,9 @@ var m22=[7,8,9,10,11,12];
 // round.push(r);
 // console.log(round);
  var rotates = function(k){
-    var r;
+    
     for(var i=1;i<=k;i++){
-         r= round.shift(round[0]);
-         round.push(r);
+        round.unshift(a.pop())
     }
     console.log(round);
  }
@@ -223,14 +222,13 @@ var m22=[7,8,9,10,11,12];
 //(4) ['pandya', 'sharma', 'dhoni', 'virat']
 var round2 = ["dhoni","virat","pandya","sharma"];
 (function(k){
-    var r;
+   
     for(var i=1;i<=k;i++){
-         r= round2.shift(round2[0]);
-         round2.push(r);
+         round2.unshift(a.pop()) 
     }
     console.log(round2);
  })(1);
- //(4) ['virat', 'pandya', 'sharma', 'dhoni']//
+ //(4) [ 'sharma', 'dhoni', 'virat', 'pandya']//
  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  //1 st question completed.
 
